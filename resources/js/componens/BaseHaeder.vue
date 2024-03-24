@@ -1,11 +1,13 @@
 <template>
-    <div class="head-line">
+    <haeder class="haed">
+        <div class="head-line">
             <p class="mini">MINI-TWITTER</p>
             <p class="m-tweet">meine Tweets</p>
             <a href="/createtweet">
                 <button>+ Tweet erstellen</button>
             </a> 
-    </div>
+        </div>
+    </haeder>
 </template>
 
 
@@ -13,17 +15,25 @@
 *{
     font-family: "Inter", sans-serif;
 }
+.haed{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 
 .head-line {
     background-color: #ffffff;
     display: flex;
-    align-items: center;   
+    align-items: center;
+    justify-content: space-between;   
 }
 
 .mini{
     margin-right: auto;
     font-size: 24px;
     font-weight: 900;
+    padding: 0px 0px 0px 150px;
 }
 
 .m-tweet{

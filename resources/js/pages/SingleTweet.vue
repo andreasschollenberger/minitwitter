@@ -44,6 +44,7 @@ onBeforeMount(() => {
     </header>
 
     <main>
+        
         <p>TWEET VOM {{ tweet.created_at }}</p>
 
         <div :key="tweet.id">
@@ -77,6 +78,9 @@ onBeforeMount(() => {
 main {
     display: grid;
     justify-content: center;
+    position: absolute;
+    left: 350px;
+    right: 350px;
 }
 
 .titel{
